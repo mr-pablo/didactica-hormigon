@@ -61,6 +61,48 @@
                 style B fill:#17a2b8,stroke:#333,stroke-width:2px,color:#fff
                 style C fill:#28a745,stroke:#333,stroke-width:2px,color:#fff
             </div>
+
+            <div class="infographic-container">
+                <h3 style="text-align:center; width:100%;">Jerarquía del Proceso de Enseñanza</h3>
+            
+                <div class="info-card level-1">
+                    <div class="icon">🧠</div>
+                    <h4>1. Didáctica</h4>
+                    <p class="definition"><strong>¿Qué es?</strong><br>Es la ciencia y el arte de enseñar. Define el "porqué" y el
+                        "para qué" de la educación.</p>
+                    <div class="example">
+                        <span>Ejemplo Civil:</span>
+                        <p>Teoría Cognitivista aplicada a la comprensión del Hormigón Armado.</p>
+                    </div>
+                </div>
+            
+                <div class="arrow">⬇</div>
+            
+                <div class="info-card level-2">
+                    <div class="icon">🗺️</div>
+                    <h4>2. Estrategia</h4>
+                    <p class="definition"><strong>¿Qué es?</strong><br>Es el plan global y metodológico. El camino trazado para
+                        alcanzar el objetivo.</p>
+                    <div class="example">
+                        <span>Ejemplo Civil:</span>
+                        <p>Aprendizaje Basado en Proyectos (Diseñar un edificio real).</p>
+                    </div>
+                </div>
+            
+                <div class="arrow">⬇</div>
+            
+                <div class="info-card level-3">
+                    <div class="icon">🛠️</div>
+                    <h4>3. Técnica</h4>
+                    <p class="definition"><strong>¿Qué es?</strong><br>Es la acción concreta. La herramienta práctica usada en un
+                        momento específico.</p>
+                    <div class="example">
+                        <span>Ejemplo Civil:</span>
+                        <p>Uso de ábacos de interacción o software SAP2000.</p>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
         <section id="estrategias">
@@ -127,7 +169,10 @@
 
             <div class="reflection">
                 <h3>Reflexión Docente</h3>
-                <p>La didáctica en ingeniería es vital porque el error de concepto tiene consecuencias fatales. Al utilizar estrategias que fomentan el razonamiento lógico (y no solo el mecánico), garantizamos ingenieros que no solo "calculan", sino que "diseñan" con criterio y seguridad.</p>
+                <p>La didáctica en la ingeniería civil es vital porque el error de concepto tiene consecuencias fatales. En la práctica docente, no basta con transmitir fórmulas del reglamento ACI; es necesario utilizar estrategias que fomenten el razonamiento lógico (y no solo el mecánico) para garantizar ingenieros que no solo "calculan", sino que "diseñan" con criterio y seguridad.</p>
+    
+                <p style="margin-top: 10px;">
+                Asimismo, el impacto de estrategias como el Aprendizaje Basado en Problemas y el uso de simuladores digitales es transformar al estudiante de un espectador pasivo a un protagonista activo. Al visualizar el comportamiento de una columna esbelta mediante software o scripts, el concepto abstracto se vuelve tangible, logrando un aprendizaje significativo que perdura mucho más allá del examen final.</p>
             </div>
             <div class="card">
                 <h3>🧮 Herramienta Didáctica: Verificación Rápida de Esbeltez</h3>
@@ -146,7 +191,7 @@
     
                 <p id="resultado" style="font-weight:bold; margin-top:10px;"></p>
             </div>
-
+            
             <script>
             function calcularEsbeltez() {
                 let k = parseFloat(document.getElementById('kVal').value);
