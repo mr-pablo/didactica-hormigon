@@ -1,0 +1,166 @@
+:root {
+    --primary-color: #0056b3; /* Azul Ingeniería */
+    --text-color: #333;
+    --bg-color: #f4f7f6;
+    --sidebar-width: 280px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    width: var(--sidebar-width);
+    height: 100vh;
+    background-color: #1a1a1a;
+    color: white;
+    position: fixed;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar h3 { font-family: 'Roboto Mono', monospace; margin-bottom: 5px; color: #fff;}
+.sidebar p { font-size: 0.8rem; color: #aaa; margin-top: 0; }
+.sidebar ul { list-style: none; padding: 0; margin-top: 40px; }
+.sidebar li { margin-bottom: 15px; }
+.sidebar a {
+    text-decoration: none;
+    color: #ccc;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+.sidebar a:hover { color: white; padding-left: 5px; }
+.footer-nav { position: absolute; bottom: 20px; font-size: 0.7rem; color: #555; }
+
+/* Main Content */
+.content {
+    margin-left: var(--sidebar-width);
+    padding: 50px 80px;
+    max-width: 900px;
+}
+
+section { margin-bottom: 80px; scroll-margin-top: 40px;}
+
+h1 { font-size: 2.5rem; color: #111; }
+h2 { border-bottom: 2px solid var(--primary-color); padding-bottom: 10px; color: #111; }
+h3 { color: var(--primary-color); }
+p { line-height: 1.6; font-size: 1.1rem; }
+
+/* Components */
+.card, .example-box, .reflection {
+    background: white;
+    padding: 20px;
+    border-left: 5px solid var(--primary-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-top: 20px;
+}
+
+.example-box { border-left-color: #28a745; background-color: #f9fff9; }
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+.card-small {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.mermaid {
+    margin-top: 60px; /* Espacio arriba */
+    margin-bottom: 40px; /* Espacio abajo */
+    text-align: center; /* Centra el diagrama */
+}
+
+/* Technical Table */
+.tech-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+}
+.tech-table th, .tech-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+.tech-table th { background-color: var(--primary-color); color: white; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sidebar { width: 100%; height: auto; position: relative; }
+    .content { margin-left: 0; padding: 20px; }
+    .grid-2 { grid-template-columns: 1fr; }
+    .footer-nav { display: none; } 
+    .sidebar { position: static; height: auto; padding: 10px; text-align: center; }
+    .sidebar ul { margin-top: 10px; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+}
+
+/* --- FOOTER ACADÉMICO MEJORADO --- */
+.doc-footer {
+    /* TRUCO: Usamos márgenes negativos para romper el padding del padre */
+    margin-left: -80px;  /* Debe coincidir con el padding-left de .content */
+    margin-right: -80px; /* Debe coincidir con el padding-right de .content */
+    margin-bottom: -50px; /* Para que llegue hasta el borde inferior absoluto */
+    
+    /* Estética */
+    margin-top: 80px;
+    padding: 40px 80px; /* Volvemos a dar aire interno */
+    background-color: #f8f9fa; /* Un gris muy suave, casi blanco (Papel) */
+    border-top: 1px solid #ddd; /* Línea sutil */
+    color: #555;
+}
+
+.doc-footer h4 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.doc-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.doc-footer li {
+    margin-bottom: 8px;
+    padding-left: 10px;
+    border-left: 3px solid #ccc; /* Detalle de cita bibliográfica */
+}
+
+.doc-footer .copyright {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px dashed #ddd; /* Separador sutil */
+    font-size: 0.75rem;
+    text-align: right; /* Alineado a la derecha queda más elegante */
+    color: #999;
+}
+
+/* AJUSTE PARA MÓVIL (Importante) */
+@media (max-width: 768px) {
+    .doc-footer {
+        /* En móvil el padding del padre cambia, así que ajustamos los negativos */
+        margin-left: -20px; 
+        margin-right: -20px;
+        padding: 30px 20px;
+        text-align: center;
+    }
+    .doc-footer .copyright { text-align: center; }
+    .doc-footer li { border-left: none; border-bottom: 1px solid #eee; padding-bottom: 5px;}
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Didáctica del Hormigón Armado II</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+</head>
+<body>
+
+    <nav class="sidebar">
+        <div class="profile">
+            <h3>Ing. Pablo Miranda</h3>
+            <p>Docente - Hormigón II</p>
+        </div>
+        <ul>
+            <li><a href="#inicio">00. Inicio</a></li>
+            <li><a href="#didactica">01. Didáctica</a></li>
+            <li><a href="#estrategias">02. Estrategias</a></li>
+            <li><a href="#tecnicas">03. Técnicas</a></li>
+            <li><a href="#material">04. Secuencia Didáctica</a></li>
+        </ul>
+        <div class="footer-nav">
+            <p>Basado en ACI 318-19 y NB-1225001</p>
+        </div>
+    </nav>
+
+    <main class="content">
+        
+        <section id="inicio">
+            <h1>Hormigón Armado II: Enfoque Cognitivista</h1>
+            <p class="intro">Material didáctico digital para la enseñanza de ingeniería estructural avanzada.</p>
+            <div class="card">
+                <h3>Propósito</h3>
+                <p>Este sitio web busca integrar los conocimientos técnicos de la ingeniería civil (normativa y cálculo) con fundamentos pedagógicos modernos, específicamente el <strong>Estilo Convergente de Kolb</strong>, ideal para la resolución de problemas de ingeniería.</p>
+            </div>
+        </section>
+
+        <section id="didactica">
+            <h2>01. ¿Qué es la Didáctica?</h2>
+            <p>Es la disciplina que articula la teoría compleja (Cálculo Estructural) con la capacidad de aprendizaje del estudiante. En el contexto de <strong>Hormigón Armado II</strong>, la didáctica no es solo transmitir fórmulas, sino facilitar la construcción de esquemas mentales que permitan al ingeniero tomar decisiones de seguridad.</p>
+            
+            <div class="example-box">
+                <h4>Ejemplo de Situación de Aula:</h4>
+                <p>En lugar de memorizar la ecuación de la elástica, el estudiante analiza por qué una viga se deforma y cómo el acero restringe esa deformación, conectando el concepto físico con la fórmula matemática.</p>
+            </div>
+
+            <div class="mermaid">
+            graph TD
+                A[Didáctica] -->|Es la ciencia/teoría| B[Estrategia Didáctica]
+                B -->|Es el plan global| C[Técnica Didáctica]
+    
+                A -.->|Ejemplo| D[Teoría Cognitivista]
+                B -.->|Ejemplo| E[Aprendizaje Basado en Proyectos]
+                C -.->|Ejemplo| F[Uso de Software / Estudio de Casos]
+    
+                style A fill:#0056b3,stroke:#333,stroke-width:2px,color:#fff
+                style B fill:#17a2b8,stroke:#333,stroke-width:2px,color:#fff
+                style C fill:#28a745,stroke:#333,stroke-width:2px,color:#fff
+            </div>
+        </section>
+
+        <section id="estrategias">
+            <h2>02. Estrategias Didácticas</h2>
+            <p>Son los planes de acción globales. Para esta asignatura, utilizamos el <strong>Aprendizaje Basado en Proyectos (ABP)</strong> alineado al estilo pragmático del ingeniero.</p>
+            
+            <div class="grid-2">
+                <div class="card-small">
+                    <h4>Estrategia 1: Diseño Real</h4>
+                    <p>Simulación de una oficina de cálculo. Se entrega un plano arquitectónico y el estudiante debe estructurar, cargar y diseñar el edificio completo a lo largo del semestre.</p>
+                </div>
+                <div class="card-small">
+                    <h4>Estrategia 2: Andamiaje Cognitivo</h4>
+                    <p>Se proveen estructuras de apoyo (guías de diseño, hojas de cálculo base) que se retiran progresivamente a medida que el estudiante gana autonomía en el diseño de elementos complejos como losas en dos direcciones.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tecnicas">
+            <h2>03. Técnicas Didácticas</h2>
+            <p>Son las actividades concretas y operativas utilizadas en la clase.</p>
+            <ul>
+                <li><strong>Estudio de Casos de Falla:</strong> Análisis forense de estructuras colapsadas para entender la importancia de los estribos y el confinamiento.</li>
+                <li><strong>Simulación Computacional:</strong> Uso de software (SAP2000/ETABS) para visualizar deformaciones y momentos, comparándolos con el cálculo manual. También se usará Revit para elaborar planillas de aceros y metrados.</li>
+                <li><strong>Aula Invertida:</strong> Revisión de la teoría del ACI-318 en casa y resolución de ejercicios de columnas biaxiales en clase.</li>
+            </ul>
+        </section>
+
+        <section id="material">
+            <h2>04. Secuencia Didáctica: Diseño de Columnas</h2>
+            <p>Aplicación práctica para la Unidad Temática 7 del Plan Global.</p>
+            
+            <table class="tech-table">
+                <thead>
+                    <tr>
+                        <th>Fase</th>
+                        <th>Detalle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Objetivo</strong></td>
+                        <td>Diseñar una columna corta sometida a flexo-compresión uniaxial garantizando su seguridad según norma ACI 318-19.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Estrategia</strong></td>
+                        <td>Aprendizaje Basado en Problemas (Cálculo de un pilar de un edificio real).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Técnica</strong></td>
+                        <td>Uso de <strong>Diagramas de Interacción</strong>.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Actividad</strong></td>
+                        <td>
+                            1. Pre-dimensionamiento de la sección.<br>
+                            2. Cálculo de cargas axiales y momentos.<br>
+                            3. Ingreso al Ábaco de Interacción.<br>
+                            4. Selección de cuantía de acero.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="reflection">
+                <h3>Reflexión Docente</h3>
+                <p>La didáctica en ingeniería es vital porque el error de concepto tiene consecuencias fatales. Al utilizar estrategias que fomentan el razonamiento lógico (y no solo el mecánico), garantizamos ingenieros que no solo "calculan", sino que "diseñan" con criterio y seguridad.</p>
+            </div>
+            <div class="card">
+                <h3>🧮 Herramienta Didáctica: Verificación Rápida de Esbeltez</h3>
+                <p>Los estudiantes pueden usar este script para verificar si una columna es corta o esbelta según ACI 318.</p>
+    
+                <label>Factor K:</label>
+                <input type="number" id="kVal" value="1.0" step="0.1"><br><br>
+    
+                <label>Longitud no arriostrada (Lu en m):</label>
+                <input type="number" id="luVal" value="3.0"><br><br>
+    
+                <label>Radio de giro (r en cm):</label>
+                <input type="number" id="rVal" value="15"><br><br>
+    
+                <button onclick="calcularEsbeltez()" style="background:var(--primary-color); color:white; padding:10px; border:none; cursor:pointer;">Calcular</button>
+    
+                <p id="resultado" style="font-weight:bold; margin-top:10px;"></p>
+            </div>
+
+            <script>
+            function calcularEsbeltez() {
+                let k = parseFloat(document.getElementById('kVal').value);
+                let lu = parseFloat(document.getElementById('luVal').value);
+                let r = parseFloat(document.getElementById('rVal').value);
+    
+                // Convertir Lu a cm
+                let luCm = lu * 100;
+                let esbeltez = (k * luCm) / r;
+    
+                let mensaje = "Relación de Esbeltez (k*lu/r): " + esbeltez.toFixed(2);
+    
+                if(esbeltez > 22) { // Límite simplificado para el ejemplo didáctico
+                    mensaje += " -> ⚠️ COLUMNA ESBELTA (Requiere amplificación de momentos)";
+                    document.getElementById('resultado').style.color = "red";
+                } else {
+                    mensaje += " -> ✅ COLUMNA CORTA (Diseño estándar)";
+                    document.getElementById('resultado').style.color = "green";
+                }
+                document.getElementById('resultado').innerText = mensaje;
+            }
+            </script>
+
+        </section>
+
+        <footer class="doc-footer">
+            <h4>Referencias Bibliográficas:</h4>
+            <ul>
+                <li>American Concrete Institute. (2019). <em>ACI 318-19: Building Code Requirements for Structural Concrete.</em></li>
+                <li>Kolb, D. A. (1984). <em>Experiential Learning: Experience as the Source of Learning.</em></li>
+                <li>Sociedad de Ingenieros de Bolivia. (2012). <em>Norma Boliviana del Hormigón Estructural NB 1225001.</em></li>
+                <li>Tobón, S. (2005). <em>Formación basada en competencias.</em></li>
+            </ul>
+            <div class="copyright">
+                © 2026 Ing. Pablo Miranda
+            </div>
+        </footer>
+
+    </main>
+    
+</body>
+</html>
